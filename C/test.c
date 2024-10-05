@@ -2,7 +2,7 @@
 
 int main(){
     
-    printf("try to solve problem");
+    printf("try to solve problem...");
 
 
     return 0;
