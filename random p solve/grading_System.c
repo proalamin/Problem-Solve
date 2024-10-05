@@ -33,7 +33,7 @@ int main(){
         }
     }
     else{
-        printf("You fail:");
+        printf("You fail: ");
         printf("F\n");
     }
 
