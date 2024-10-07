@@ -24,6 +24,17 @@ Pattern-3
  4 3 2 1
  5 4 3 2 1
 
+ --------------------
+
+Pattern-4
+      1
+     12
+    123
+   1234
+  12345
+ 123456
+1234567
+
 */
 
 #include <stdio.h>
@@ -68,6 +79,24 @@ int main(){
     }
 
     printf("\n\n");
+
+    /* Pattern-4 */
+    printf("Pattern-4\n");
+    int n=7;
+    for(int i=1; i<=n; i++){
+
+        for(int j=1; j<=n-i; j++){
+            printf(" ");
+        }
+
+        for(int j=1; j<=i; j++){
+            printf("%d", j);
+        }
+        printf("\n");
+    }
+
+    printf("\n\n");
+    
 
 
     return 0;
