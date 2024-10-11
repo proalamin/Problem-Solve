@@ -9,8 +9,6 @@ int main(){
     scanf("%d", &n);
     int a[n];
 
-    int possition =sizeof(a) /sizeof(a[0]);
-
     for(int i=0; i<n; i++){
         scanf("%d", &a[i]);
     }
