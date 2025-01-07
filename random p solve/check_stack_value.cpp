@@ -83,45 +83,27 @@ int main(){
         st2.push(x);
     }
 
-    int flag=false;
+    bool flag=true;
     if(n==m){
         while(!st.empty()){
             int val1= st.top();
-            st.pop();
             int val2= st2.top();
-            st2.pop();
-
-            if(val1==val2){
-                flag=true;
-            }else{
+            if(val1!=val2){
                 flag=false;
+                break;
             }
+            st.pop();
+            st2.pop();
         }
-        if(flag){
+        if(flag==true){
             cout << "YES";
         }else{
             cout << "NO";
         }
-        // cout << (flag ? "YES" : "NO");
     }else{
         cout << "NO";
     }
 
-   
-
-
-
-   
-    // while(!st.empty()){
-    //     cout << st.top() << " ";
-    //     st.pop();
-    // }
-    // cout << endl;
-
-    // while(!st2.empty()){
-    //     cout << st2.top() << " ";
-    //     st2.pop();
-    // }
 
 
     return 0;
